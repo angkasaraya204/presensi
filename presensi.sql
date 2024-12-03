@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Waktu pembuatan: 18 Nov 2024 pada 12.55
+-- Waktu pembuatan: 03 Des 2024 pada 12.39
 -- Versi server: 8.0.30
--- Versi PHP: 7.3.15
+-- Versi PHP: 8.3.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -111,8 +111,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `level`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'Admin', 'admin', 'admin@gmail.com', NULL, '$2y$10$CtaguT96x9MF4o2I7nL9feoB3B/O9TgarOiaIgBB5xvI/tPF6fhWS', 'zSkHPrvrSFo7z9hoXFfX7VvLq2OPTHTCGRtVpdfi2pmvYmj5dpU9nF6f1EKS', '2024-11-18 05:39:13', '2024-11-18 05:39:13'),
-(2, 'Karyawan', 'karyawan', 'karyawan@gmail.com', NULL, '$2y$10$tlxThqHMfa.ZlW/ZVU1oDu3V7koF6m8CVvSCfEtynS.B5OkPqFdhW', 'ZuwgkYGZEzehU0vbimFFvyCm8xSxeNFL7eYQI7O2LMCQqspyzfsxEJVe55Kk', '2024-11-18 05:39:13', '2024-11-18 05:39:13');
+(1, 'Admin', 'admin', 'admin@gmail.com', NULL, '$2y$10$hX/nGyVQKuHHYYogzOBM7etPZXTJOjeKxErWwV2OE5KFA7RVW7t/C', 'g3noRxtdZoYWKIYoUyifqYXpm2XEZKzoROZkIH1s2TqDTcaHuDACBmpHqSMO', '2024-12-03 05:39:02', '2024-12-03 05:39:02'),
+(2, 'Karyawan', 'karyawan', 'karyawan@gmail.com', NULL, '$2y$10$xPMDp/.HJJ.y3lszr02A0uMEPrZyU0wmHoIqGZDpnuUY0oYR2W/0W', 'WbKs8uds1YllW754VJGRSnkCfordtbMW999wY5KesdEWL1NVs21zSV7vAFIB', '2024-12-03 05:39:02', '2024-12-03 05:39:02');
 
 --
 -- Indexes for dumped tables

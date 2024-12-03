@@ -30,7 +30,7 @@
                         </p>
                     </a>
                 </li>
-                @if (auth()->user()->level == "karyawan")
+                @if (auth()->user()->level !== "admin")
                 <li class="nav-item has-treeview">
                     <a href="#" class="nav-link ">
                         <i class="nav-icon fas fa-clock"></i>
@@ -65,15 +65,14 @@
                         </p>
                     </a>
                     <ul class="nav nav-treeview">
-                        @if (auth()->user()->level == "karyawan")
+                        @if (auth()->user()->level !== "admin")
                         <li class="nav-item">
                             <a href="{{ route('semua-presensi') }}" class="nav-link ">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Presensi Per Karyawan</p>
                             </a>
                         </li>
-                        @endif
-                        @if (auth()->user()->level == "admin")
+                        @else
                         <li class="nav-item">
                             <a href="{{ route('semua-rekap') }}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
